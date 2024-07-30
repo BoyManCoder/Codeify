@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #191723;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.logo:hover {
+  color: rgb(233, 233, 233);
+  transition: 0.2s;
+}
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: #191723;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 100px;
+  background-color: #191723;
+  box-shadow: rgba(61, 61, 68, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav__links {
+  list-style: none;
+  background-color: #191723;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: #191723;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  background-color: #191723;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+  background-color: #191723;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #5D547C;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #4a4363;
+
+}

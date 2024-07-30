@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --main-color: #2C2538;
+  --secondary-color: #5f507a;
+  --third-color: #8f7cb9;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.contact__container {
+  margin-top: 7vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__card {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.4) 0vw 0vw 5vw;
+}
+
+.contact__image__col {
+  width: 40%;
+  height: 95%;
+  background: linear-gradient(30deg, var(--third-color) 0%, whitesmoke, var(--third-color) 50%);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__image__content {
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 10px;
+
+}
+
+.contact__text__col {
+  width: 50%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact__name {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.2em;
+  color: ghostwhite;
+  padding: 5px;
+}
+
+.contact__text {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  line-height: 1.6;
+  font-size: 1.5em;
+  color: ghostwhite;
+  text-align: justify;
+}
+
+.card__foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body__button {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@keyframes background__change {
+  0% {
+    background: linear-gradient(30deg, var(--third-color) -40%, whitesmoke, var(--third-color) 10%);
+  }
+
+  5% {
+    background: linear-gradient(30deg, var(--third-color) -30%, whitesmoke, var(--third-color) 25%);
+  }
+
+  10% {
+    background: linear-gradient(30deg, var(--third-color) -10%, whitesmoke, var(--third-color) 30%);
+  }
+
+  15% {
+    background: linear-gradient(30deg, var(--third-color) -5%, whitesmoke, var(--third-color) 35%);
+  }
+
+  20% {
+    background: linear-gradient(30deg, var(--third-color) 0%, whitesmoke, var(--third-color) 40%);
+  }
+
+  25% {
+    background: linear-gradient(30deg, var(--third-color) 5%, whitesmoke, var(--third-color) 45%);
+  }
+
+  30% {
+    background: linear-gradient(30deg, var(--third-color) 10%, whitesmoke, var(--third-color) 50%);
+  }
+
+  35% {
+    background: linear-gradient(30deg, var(--third-color) 15%, whitesmoke, var(--third-color) 55%);
+  }
+
+  40% {
+    background: linear-gradient(30deg, var(--third-color) 20%, whitesmoke, var(--third-color) 60%);
+  }
+
+  45% {
+    background: linear-gradient(30deg, var(--third-color) 25%, whitesmoke, var(--third-color) 65%);
+  }
+
+  50% {
+    background: linear-gradient(30deg, var(--third-color) 30%, whitesmoke, var(--third-color) 70%);
+  }
+
+  55% {
+    background: linear-gradient(30deg, var(--third-color) 35%, whitesmoke, var(--third-color) 75%);
+  }
+
+  60% {
+    background: linear-gradient(30deg, var(--third-color) 40%, whitesmoke, var(--third-color) 80%);
+  }
+
+  65% {
+    background: linear-gradient(30deg, var(--third-color) 45%, whitesmoke, var(--third-color) 85%);
+  }
+
+  70% {
+    background: linear-gradient(30deg, var(--third-color) 50%, whitesmoke, var(--third-color) 90%);
+  }
+
+  75% {
+    background: linear-gradient(30deg, var(--third-color) 55%, whitesmoke, var(--third-color) 95%);
+  }
+
+  80% {
+    background: linear-gradient(30deg, var(--third-color) 60%, whitesmoke, var(--third-color) 100%);
+  }
+
+  85% {
+    background: linear-gradient(30deg, var(--third-color) 65%, whitesmoke, var(--third-color) 105%);
+  }
+
+  90% {
+    background: linear-gradient(30deg, var(--third-color) 70%, whitesmoke, var(--third-color) 110%);
+  }
+
+  95% {
+    background: linear-gradient(30deg, var(--third-color) 75%, whitesmoke, var(--third-color) 115%);
+  }
+
+  100% {
+    background: linear-gradient(30deg, var(--third-color) 80%, whitesmoke, var(--third-color) 130%);
+  }
+}
+
+
+
+.body__button__bg {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(30deg, var(--third-color) 30%, whitesmoke, var(--third-color) 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body__button__bg:hover {
+  animation: background__change 0.9s linear infinite;
+}
+
+.body__button button {
+  width: 100%;
+  height: 100%;
+  font-size: 80%;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  text-align: center;
+}

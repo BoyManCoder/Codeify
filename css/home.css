@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+:root {
+    --main-color: #2C2538;
+    --secondary-color: #001220;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(10%);
+    background-color: #2C2538;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.8em;
+    align-content: center;
+    margin-left: 39vw;
+    position: absolute;
+    transform: translateY(300%);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.hero h3 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.7em;
+    align-content: center;
+    margin-left: 43vw;
+    position: absolute;
+    transform: translateY(540%);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.hero .blob {
+    margin-left: 26vw;
+}
+
+.spacer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.spacer img {
+    width: 100%;
+    height: 0%;
+    display: block;
+}
+
+.inform {
+    background-color: #001220;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    /* Enable Flexbox */
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    overflow: hidden;
+}
+
+.inform h1 {
+    color: white;
+    z-index: 1;
+    font-size: 4em;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    margin-left: 5vw;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* code for when the thing is active */
+.inform .reveal.active .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin-top: 10vh;
+    transform: translateY(0);
+    /* Initial position for the container */
+    padding: 20px;
+}
+
+.inform .reveal.active .cards .text-card {
+    width: 22vw;
+    height: 35vh;
+    background-color: #748DFB;
+    padding: 50px;
+}
+
+
+.inform .reveal.active .cards .text-card p {
+    font-size: 1em;
+    margin-top: 1vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.inform .reveal.active .cards .text-card h3 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*code for when transition not active*/
+.inform .reveal .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin-top: 10vh;
+    transform: translateY(0);
+    /* Initial position for the container */
+    padding: 20px;
+}
+
+.inform .reveal .cards .text-card {
+    width: 22vw;
+    height: 35vh;
+    background-color: #748DFB;
+    padding: 50px;
+}
+
+
+.inform .reveal .cards .text-card p {
+    font-size: 1em;
+    margin-top: 1vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.inform .reveal .cards .text-card h3 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.filler {
+    background-color: var(--secondary-color);
+    height: 15vh;
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
